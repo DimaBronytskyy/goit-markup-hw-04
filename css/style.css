@@ -151,7 +151,6 @@ img {
 }
 .footer-div-div {
   margin-right: 120px;
-
 }
 
 .footera.apos {
@@ -455,23 +454,32 @@ img {
 
 /* 2  */
 .knopka {
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--iriscolor);
-  background-color: #f4f4fd;
-  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.knopka:hover {
-  color: #ffffff;
-  background-color: #404bbf;
-}
+.knopka:hover,
 .knopka:focus {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .name {
   font-weight: 500;
   font-size: 20px;
@@ -496,17 +504,7 @@ img {
   gap: 24px;
   margin-bottom: 72px;
 }
-.po-li-bu {
-  padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
-.po-li-bu:hover {
-  border: 1px solid transparent;
-}
-.po-li-bu:focus {
-  border: 1px solid transparent;
-}
+
 .po-ul-two {
   display: flex;
   flex-wrap: wrap;
@@ -525,7 +523,64 @@ img {
   margin-bottom: 8px;
 }
 /* window */
+.modal-one {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modalka {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background: var(--dairy, #fcfcfc);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
+}
+
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cornflower, #e7e9fc);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button:hover,
+.close-button:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
+}
+.close-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* паттерн */
 .visually-hidden {
   position: absolute;
