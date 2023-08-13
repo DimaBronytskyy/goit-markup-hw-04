@@ -149,6 +149,11 @@ img {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.footer-div-div {
+  margin-right: 120px;
+
+}
+
 .footera.apos {
   display: inline-block;
   margin-bottom: 16px;
@@ -191,7 +196,48 @@ img {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-socials {
+  margin-right: 80px;
+}
 
+.social-zagol {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--green);
+}
+
+.social-logo {
+  fill: var(--cloud);
+}
 /* 1 section 1 */
 .section-one {
   background-color: var(--navyblue);
@@ -200,11 +246,12 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1\ \(1\).jpg);
+    url(../images/people-office\1\\(1\).jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
 .zagol-one {
   font-size: 56px;
@@ -213,6 +260,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   max-width: 496px;
+  margin-left: calc(1158px - 248px - 1158px / 2);
 }
 .first-knopka {
   background-color: #4d5ae5;
@@ -231,6 +279,8 @@ img {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: calc(1158px - 157px / 2 - 1158px / 2);
+  margin-top: 48px;
 }
 .first-knopka:hover {
   background-color: #404bbf;
@@ -303,7 +353,8 @@ img {
   background-color: #ffffff;
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .hsectionfour {
   margin-bottom: 72px;
@@ -470,6 +521,8 @@ img {
   border-top: none;
   margin-bottom: 8px;
 }
+/* window */
+
 /* паттерн */
 .visually-hidden {
   position: absolute;
