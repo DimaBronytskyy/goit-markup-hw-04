@@ -202,14 +202,7 @@ img {
     ),
     url(../images/people-office\ 1\ \(1\).jpg);
   max-width: 1440px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
+  
 }
 .zagol-one {
   font-size: 56px;
@@ -260,6 +253,18 @@ img {
   letter-spacing: 0.02em;
   color: var(--navybluecolor);
   margin-bottom: 8px;
+}
+.advantages-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border-radius: 4px;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+.advantages-icon {
+  margin: 24px 100px;
 }
 .selione {
   flex-basis: calc((100% - 3 * 24px) / 4);
